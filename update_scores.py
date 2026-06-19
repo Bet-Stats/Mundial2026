@@ -98,7 +98,7 @@ def save(scores: dict) -> None:
 
 
 def main():
-    api_key = os.environ.get("FOOTBALL_DATA_API_KEY", "").strip()
+    api_key = os.environ.get("API_TOKEN", "").strip()
 
     if not api_key:
         print("⚠ FOOTBALL_DATA_API_KEY no definida — omitiendo actualización de marcadores.")
